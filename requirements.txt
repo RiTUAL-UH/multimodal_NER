@@ -1,0 +1,9 @@
+numpy==1.21.0
+tabulate==0.8.9
+transformers==4.10.2
+torch==1.9.0+cu111
+tqdm==4.62.2
+h5py==3.4.0
+allennlp==2.7.0
+seqeval==1.2.2
+caffe2==0.8.1

@@ -1,0 +1,54 @@
+{
+    "experiment": {
+       "id": "exp1.0-bert-baseline-2015",
+       "description": "Fine-tuning BERT on Twitter-2015 dataset",
+       "do_training": true,
+       "output_dir": "results"
+    },
+    "data": {
+        "directory": "data/twitter_2015",
+        "dataset_class": "ner",
+        "text": {
+            "train": "texts/train/train.json",
+            "dev": "texts/dev/dev.json",
+            "test": "texts/test/test.json"
+        },
+        "image":{
+            "embedding_dim": null,
+            "size": null,
+            "train": null,
+            "dev": null,
+            "test": null
+        },
+        "caption":{
+            "train": null,
+            "dev": null,
+            "test": null
+        },
+        "label_scheme": ["B-LOC", "B-OTHER", "B-ORG", "B-PER", "I-LOC", "I-OTHER", "I-ORG", "I-PER", "O"]
+    },
+    "model": {
+        "name": "ner",
+        "model_name_or_path": "bert-base-uncased",
+        "pretrained_weights": null,
+        "do_lower_case": true,
+        "output_attentions": false,
+        "output_hidden_states": false
+    },
+    "training": {
+        "epochs": 20,
+        "per_gpu_train_batch_size": 32,
+        "per_gpu_eval_batch_size": 32,
+        "optim": {
+            "learning_rate": 5e-5,
+            "max_steps": -1,
+            "gradient_accumulation_steps": 1,
+            "weight_decay": 0.01,
+            "beta_1": 0.9,
+            "beta_2": 0.999,
+            "adam_epsilon": 1e-8,
+            "max_grad_norm": 1.0,
+            "warmup_steps": 0
+        }
+    }
+}
