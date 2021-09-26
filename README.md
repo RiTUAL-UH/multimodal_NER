@@ -69,7 +69,16 @@ If you would like to run experiments with VisualBERT, please download the pretra
 ```
 
 ## Citation
-(Comming soon...)
+```
+@misc{chen2021images,
+      title={Can images help recognize entities? A study of the role of images for Multimodal NER}, 
+      author={Shuguang Chen and Gustavo Aguilar and Leonardo Neves and Thamar Solorio},
+      year={2021},
+      eprint={2010.12712},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
 
 ## Contact
 Feel free to get in touch via email to schen52@uh.edu.
