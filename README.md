@@ -70,13 +70,20 @@ If you would like to run experiments with VisualBERT, please download the pretra
 
 ## Citation
 ```
-@misc{chen2021images,
-      title={Can images help recognize entities? A study of the role of images for Multimodal NER}, 
-      author={Shuguang Chen and Gustavo Aguilar and Leonardo Neves and Thamar Solorio},
-      year={2021},
-      eprint={2010.12712},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{chen-etal-2021-images,
+    title = "Can images help recognize entities? A study of the role of images for Multimodal {NER}",
+    author = "Chen, Shuguang  and
+      Aguilar, Gustavo  and
+      Neves, Leonardo  and
+      Solorio, Thamar",
+    booktitle = "Proceedings of the Seventh Workshop on Noisy User-generated Text (W-NUT 2021)",
+    month = nov,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.wnut-1.11",
+    pages = "87--96",
+    abstract = "Multimodal named entity recognition (MNER) requires to bridge the gap between language understanding and visual context. While many multimodal neural techniques have been proposed to incorporate images into the MNER task, the model{'}s ability to leverage multimodal interactions remains poorly understood. In this work, we conduct in-depth analyses of existing multimodal fusion techniques from different perspectives and describe the scenarios where adding information from the image does not always boost performance. We also study the use of captions as a way to enrich the context for MNER. Experiments on three datasets from popular social platforms expose the bottleneck of existing multimodal models and the situations where using captions is beneficial.",
 }
 ```
 
