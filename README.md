@@ -45,6 +45,12 @@ In this repository, we provide some toy examples to play with the code. Due to t
 3. associated image captions
 ```
 
+<u>Image feature extraction</u>:
+- Global image features: you can use the script under `src/data/global_image_feature_extraction` for extract image features from VGG16 or ResNet152.
+- Regional image features: we provide the script under `src/data/regional_image_feature_extraction`. Please follow the instructions in [VisualBERT](https://github.com/uclanlp/visualbert/tree/master/visualbert) for extracting features for image objects.
+
+
+
 ## Running
 
 We use config files to specify the details for every experiment (e.g., hyper-parameters, datasets, etc.). You can modify config files in the `configs` directory and run experiments with following command:
